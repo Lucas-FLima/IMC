@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>CALCULADORA DE IMC</title>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="container">
+            <div class="title">
+                <h1>Calcule seu imc</h1>
+            </div>
+            <div class="infos">
+                <label for="peso">
+                    <h3>Peso:</h3>
+                    <input type="number" name="peso" id="peso" min="0" maxlength="6">
+                </label>
+            </div>
+            <div class="infos">
+                <label for="altura">
+                    <h3>Altura:</h3>
+                    <input type="number" name="altura" id="altura" min="0" maxlength="4">
+                </label>
+            </div>
+            <div class="acoes">
+                <div class="calcular" onclick="calcular()">
+                    <h2>Calcular</h2>
+                </div>
+                <div class="resetar" onclick="reset()">
+                    <h2>Resetar</h2>
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            <div class="imc"></div>
+            <div class="classifc"></div>
+            <div class="dado"></div>
+            <div class="ideal_peso"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Direitos reservados <a href="https://github.com/Lucas-FLima" target="_blank">Lucas Lima</a></p>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
